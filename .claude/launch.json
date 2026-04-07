@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "monte-books",
+      "runtimeExecutable": "/opt/homebrew/bin/python3",
+      "runtimeArgs": ["-m", "http.server", "3456", "--directory", "/Users/alexeylenyashin/Documents/MonteBooks"],
+      "port": 3456
+    }
+  ]
+}
