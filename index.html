@@ -1,152 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monte Books</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Monte Books</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo">
+                        <span class="logo-word" data-i18n="logoMonte"
+                            >Monte</span
+                        >
+                        <img
+                            src="images/logo.png"
+                            alt="Monte Books"
+                            class="logo-image"
+                        />
+                        <span class="logo-word" data-i18n="logoBooks"
+                            >Books</span
+                        >
+                    </div>
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="ru">
+                            RU
+                        </button>
+                        <span class="lang-sep">/</span>
+                        <button class="lang-btn" data-lang="me">ME</button>
+                        <span class="lang-sep">/</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </div>
 
-  <header class="site-header">
-    <div class="container">
-
-      <div class="header-top">
-        <div class="logo">
-          <span class="logo-word" data-i18n="logoMonte">Monte</span>
-          <img src="images/logo.png" alt="Monte Books" class="logo-image">
-          <span class="logo-word" data-i18n="logoBooks">Books</span>
-        </div>
-        <div class="lang-switcher">
-          <button class="lang-btn active" data-lang="ru">RU</button>
-          <span class="lang-sep">/</span>
-          <button class="lang-btn" data-lang="me">ME</button>
-          <span class="lang-sep">/</span>
-          <button class="lang-btn" data-lang="en">EN</button>
-        </div>
-      </div>
-
-      <nav class="header-nav">
-        <a href="#books" data-i18n="navBooks">Книги</a>
-        <a href="#about" data-i18n="navAbout">О нас</a>
-        <a href="#contacts" data-i18n="navContacts">Контактная информация</a>
-      </nav>
-
-    </div>
-  </header>
-
-  <main>
-
-    <!-- ======= BOOKS ======= -->
-    <section id="books" class="section">
-      <div class="container">
-        <h2 class="section-title" data-i18n="navBooks">Книги</h2>
-        <div class="books-grid">
-
-          <!-- Book card template — добавляй новые по этому образцу -->
-          <article class="book-card" data-book-id="1">
-            <!-- <a href="books/book-slug/index.html"> -->
-            <div class="book-cover book-cover--1">
-              <img src="images/books/book-1.png" alt="" onerror="this.style.display='none'">
+                <nav class="header-nav">
+                    <a href="#books" data-i18n="navBooks">Книги</a>
+                    <a href="#about" data-i18n="navAbout">О нас</a>
+                    <a href="#contacts" data-i18n="navContacts"
+                        >Контактная информация</a
+                    >
+                </nav>
             </div>
-            <div class="book-info">
-              <h3 class="book-title" data-i18n="book1Title">Название книги</h3>
-              <p class="book-author" data-i18n="book1Author">Имя Автора</p>
-              <p class="book-desc" data-i18n="book1Desc">Короткое описание книги. Несколько предложений о чём она и почему стоит её прочитать.</p>
-            </div>
-            <!-- </a> -->
-          </article>
+        </header>
 
-          <article class="book-card" data-book-id="2">
-            <div class="book-cover book-cover--2">
-              <img src="images/books/book-2.png" alt="" onerror="this.style.display='none'">
-            </div>
-            <div class="book-info">
-              <h3 class="book-title" data-i18n="book2Title">Название книги</h3>
-              <p class="book-author" data-i18n="book2Author">Имя Автора</p>
-              <p class="book-desc" data-i18n="book2Desc">Короткое описание книги. Несколько предложений о чём она и почему стоит её прочитать.</p>
-            </div>
-          </article>
+        <main>
+            <!-- ======= BOOKS ======= -->
+            <section id="books" class="section">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="navBooks">Книги</h2>
+                    <div class="books-grid">
+                        <!-- Book card template — добавляй новые по этому образцу -->
+                        <article class="book-card" data-book-id="1">
+                            <!-- <a href="books/book-slug/index.html"> -->
+                            <div class="book-cover book-cover--1">
+                                <img
+                                    src="images/books/book-1.png"
+                                    alt=""
+                                    onerror="this.style.display = 'none'"
+                                />
+                            </div>
+                            <div class="book-info">
+                                <h3 class="book-title" data-i18n="book1Title">
+                                    Название книги
+                                </h3>
+                                <p class="book-author" data-i18n="book1Author">
+                                    Имя Автора
+                                </p>
+                                <p class="book-desc" data-i18n="book1Desc">
+                                    Короткое описание книги. Несколько
+                                    предложений о чём она и почему стоит её
+                                    прочитать.
+                                </p>
+                            </div>
+                            <!-- </a> -->
+                        </article>
 
-          <article class="book-card" data-book-id="3">
-            <div class="book-cover book-cover--3">
-              <img src="images/books/book-3.png" alt="" onerror="this.style.display='none'">
-            </div>
-            <div class="book-info">
-              <h3 class="book-title" data-i18n="book3Title">Название книги</h3>
-              <p class="book-author" data-i18n="book3Author">Имя Автора</p>
-              <p class="book-desc" data-i18n="book3Desc">Короткое описание книги. Несколько предложений о чём она и почему стоит её прочитать.</p>
-            </div>
-          </article>
+                        <article class="book-card" data-book-id="2">
+                            <div class="book-cover book-cover--2">
+                                <img
+                                    src="images/books/book-2.png"
+                                    alt=""
+                                    onerror="this.style.display = 'none'"
+                                />
+                            </div>
+                            <div class="book-info">
+                                <h3 class="book-title" data-i18n="book2Title">
+                                    Название книги
+                                </h3>
+                                <p class="book-author" data-i18n="book2Author">
+                                    Имя Автора
+                                </p>
+                                <p class="book-desc" data-i18n="book2Desc">
+                                    Короткое описание книги. Несколько
+                                    предложений о чём она и почему стоит её
+                                    прочитать.
+                                </p>
+                            </div>
+                        </article>
 
-          <article class="book-card" data-book-id="4">
-            <div class="book-cover book-cover--4">
-              <img src="images/books/book-4.png" alt="" onerror="this.style.display='none'">
-            </div>
-            <div class="book-info">
-              <h3 class="book-title" data-i18n="book4Title">Название книги</h3>
-              <p class="book-author" data-i18n="book4Author">Имя Автора</p>
-              <p class="book-desc" data-i18n="book4Desc">Короткое описание книги. Несколько предложений о чём она и почему стоит её прочитать.</p>
-            </div>
-          </article>
+                        <article class="book-card" data-book-id="3">
+                            <div class="book-cover book-cover--3">
+                                <img
+                                    src="images/books/book-3.png"
+                                    alt=""
+                                    onerror="this.style.display = 'none'"
+                                />
+                            </div>
+                            <div class="book-info">
+                                <h3 class="book-title" data-i18n="book3Title">
+                                    Название книги
+                                </h3>
+                                <p class="book-author" data-i18n="book3Author">
+                                    Имя Автора
+                                </p>
+                                <p class="book-desc" data-i18n="book3Desc">
+                                    Короткое описание книги. Несколько
+                                    предложений о чём она и почему стоит её
+                                    прочитать.
+                                </p>
+                            </div>
+                        </article>
 
-        </div>
-      </div>
-    </section>
+                        <article class="book-card" data-book-id="4">
+                            <div class="book-cover book-cover--4">
+                                <img
+                                    src="images/books/book-4.png"
+                                    alt=""
+                                    onerror="this.style.display = 'none'"
+                                />
+                            </div>
+                            <div class="book-info">
+                                <h3 class="book-title" data-i18n="book4Title">
+                                    Название книги
+                                </h3>
+                                <p class="book-author" data-i18n="book4Author">
+                                    Имя Автора
+                                </p>
+                                <p class="book-desc" data-i18n="book4Desc">
+                                    Короткое описание книги. Несколько
+                                    предложений о чём она и почему стоит её
+                                    прочитать.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-    <!-- ======= ABOUT ======= -->
-    <section id="about" class="section section--tinted">
-      <div class="container">
-        <h2 class="section-title" data-i18n="navAbout">О нас</h2>
-        <div class="about-content">
-          <p data-i18n="aboutP1">Monte Books — независимое издательство, основанное с любовью к литературе и убеждением, что хорошая книга меняет жизнь. Мы работаем с авторами и текстами, которые важны нам самим.</p>
-          <p data-i18n="aboutP2">Этот текст будет заменён основателем издательства. Здесь появится настоящая история — о том, откуда мы, зачем мы и к чему стремимся.</p>
-        </div>
-      </div>
-    </section>
+            <!-- ======= ABOUT ======= -->
+            <section id="about" class="section section--tinted">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="navAbout">О нас</h2>
+                    <div class="about-content">
+                        <p data-i18n="aboutP1">
+                            Monte Books — независимое издательство, основанное с
+                            любовью к литературе и убеждением, что хорошая книга
+                            меняет жизнь. Мы работаем с авторами и текстами,
+                            которые важны нам самим.
+                        </p>
+                        <p data-i18n="aboutP2">
+                            Этот текст будет заменён основателем издательства.
+                            Здесь появится настоящая история — о том, откуда мы,
+                            зачем мы и к чему стремимся.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-    <!-- ======= CONTACTS ======= -->
-    <section id="contacts" class="section">
-      <div class="container">
-        <h2 class="section-title" data-i18n="navContacts">Контактная информация</h2>
-        <ul class="contacts-list">
+            <!-- ======= CONTACTS ======= -->
+            <section id="contacts" class="section">
+                <div class="container">
+                    <h2 class="section-title" data-i18n="navContacts">
+                        Контактная информация
+                    </h2>
+                    <ul class="contacts-list">
+                        <li class="contact-item">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                >
+                                    <rect
+                                        x="2"
+                                        y="4"
+                                        width="20"
+                                        height="16"
+                                        rx="2"
+                                    />
+                                    <path d="M2 7l10 7 10-7" />
+                                </svg>
+                            </span>
+                            <a
+                                href="mailto:hello@montebooks.me"
+                                class="contact-link"
+                                >hello@montebooks.me</a
+                            >
+                        </li>
 
-          <li class="contact-item">
-            <span class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="2" y="4" width="20" height="16" rx="2"/>
-                <path d="M2 7l10 7 10-7"/>
-              </svg>
-            </span>
-            <a href="mailto:hello@montebooks.me" class="contact-link">hello@montebooks.me</a>
-          </li>
+                        <li class="contact-item">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                >
+                                    <path
+                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                                    />
+                                </svg>
+                            </span>
+                            <a href="tel:+38200000000" class="contact-link"
+                                >+382 00 000 000</a
+                            >
+                        </li>
 
-          <li class="contact-item">
-            <span class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-              </svg>
-            </span>
-            <a href="tel:+38200000000" class="contact-link">+382 00 000 000</a>
-          </li>
+                        <li class="contact-item">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 13.67l-2.97-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.636.916z"
+                                    />
+                                </svg>
+                            </span>
+                            <a
+                                href="https://t.me/montebooks"
+                                target="_blank"
+                                rel="noopener"
+                                class="contact-link"
+                                >@montebooks</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
 
-          <li class="contact-item">
-            <span class="contact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 13.67l-2.97-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.636.916z"/>
-              </svg>
-            </span>
-            <a href="https://t.me/montebooks" target="_blank" rel="noopener" class="contact-link">@montebooks</a>
-          </li>
-
-        </ul>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ======= LEGAL (скрыт, раскомментировать когда понадобится) ======= -->
-  <!--
+        <!-- ======= LEGAL (скрыт, раскомментировать когда понадобится) ======= -->
+        <!--
   <section id="legal" class="section section--legal">
     <div class="container">
       <div class="legal-content">
@@ -156,13 +250,12 @@
   </section>
   -->
 
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-copy">© <span id="year"></span> Monte Books</p>
-    </div>
-  </footer>
+        <footer class="site-footer">
+            <div class="container">
+                <p class="footer-copy">© <span id="year"></span> Monte Books</p>
+            </div>
+        </footer>
 
-  <script src="js/main.js"></script>
-
-</body>
+        <script src="js/main.js"></script>
+    </body>
 </html>
