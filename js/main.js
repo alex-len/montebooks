@@ -18,9 +18,9 @@ const i18n = {
     book1Author: 'Имя Автора',
     book1Desc:   'Короткое описание книги. Несколько предложений о чём она и почему стоит её прочитать.',
 
-    book2Title:  'Название книги',
-    book2Author: 'Имя Автора',
-    book2Desc:   'Короткое описание книги. Несколько предложений о чём она и почему стоит её прочитать.',
+    book2Title:  'Выжить!',
+    book2Author: 'Владимир Смирнов, Александр Никишин',
+    book2Desc:   'Воспоминания самого известного в мире русского эмигранта — человека, который бежал от расстрела, потерял всё и создал водочный бренд Smirnoff. О том, как выжить, когда кажется, что выхода нет.',
 
     book3Title:  'Название книги',
     book3Author: 'Имя Автора',
@@ -45,9 +45,9 @@ const i18n = {
     book1Author: 'Ime autora',
     book1Desc:   'Kratki opis knjige. Nekoliko rečenica o čemu se radi i zašto vrijedi pročitati.',
 
-    book2Title:  'Naziv knjige',
-    book2Author: 'Ime autora',
-    book2Desc:   'Kratki opis knjige. Nekoliko rečenica o čemu se radi i zašto vrijedi pročitati.',
+    book2Title:  'Preživjeti!',
+    book2Author: 'Vladimir Smirnov, Aleksandar Nikišin',
+    book2Desc:   'Sjećanja najpoznatijeg ruskog emigranta na svijetu — čovjeka koji je pobjegao od smaknuća, izgubio sve i stvorio votku Smirnoff. O tome kako preživjeti kad se čini da nema izlaza.',
 
     book3Title:  'Naziv knjige',
     book3Author: 'Ime autora',
@@ -72,9 +72,9 @@ const i18n = {
     book1Author: 'Author Name',
     book1Desc:   'A short description of the book. A few sentences about what it is and why it is worth reading.',
 
-    book2Title:  'Book title',
-    book2Author: 'Author Name',
-    book2Desc:   'A short description of the book. A few sentences about what it is and why it is worth reading.',
+    book2Title:  'Survive!',
+    book2Author: 'Vladimir Smirnov, Alexander Nikishin',
+    book2Desc:   'The memoirs of the world\'s most famous Russian émigré — a man who fled execution, lost everything, and created the Smirnoff vodka brand. A story about surviving when there seems to be no way out.',
 
     book3Title:  'Book title',
     book3Author: 'Author Name',
