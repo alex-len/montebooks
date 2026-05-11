@@ -30,6 +30,10 @@ const i18n = {
     book4Author: 'Александр Никишин',
     book4Desc:   'Мы думаем, что коты живут среди нас. Коты считают иначе. Опыт совместного выживания — о том, как люди и кошки уживаются в разных странах, и о больших счётах, которые коты нам предъявляют.',
 
+    promoLabel:  'Иллюстрированный альбом',
+    promoTitle:  'Принцессы Черногории. Реконструкция королевской истории',
+    promoDesc:   'У короля Черногории Николы Петровича было девять дочек. Как найти им принцев, если сами принцессы живут в крошечном государстве в недоступных Чёрных Горах? Реконструкция королевской жизни Черногории на основе фотоматериалов и документов из архивов Европы.',
+
     aboutP1:     'Monte Books — независимое издательство, основанное с любовью к литературе и убеждением, что хорошая книга меняет жизнь. Мы работаем с авторами и текстами, которые важны нам самим.',
     aboutP2:     'Этот текст будет заменён основателем издательства. Здесь появится настоящая история — о том, откуда мы, зачем мы и к чему стремимся.',
   },
@@ -57,6 +61,10 @@ const i18n = {
     book4Author: 'Aleksandar Nikišin',
     book4Desc:   'Mislimo da mačke žive među nama. Mačke misle drugačije. Iskustvo zajedničkog preživljavanja — o tome kako se ljudi i mačke snalaze u različitim zemljama i o velikim računima koje nam mačke ispostavljaju.',
 
+    promoLabel:  'Ilustrovani album',
+    promoTitle:  'Princeze Crne Gore. Rekonstrukcija kraljevske istorije',
+    promoDesc:   'Kralj Crne Gore Nikola Petrović imao je devet kćeri. Kako naći prinčeve za njih kad same princeze žive u maloj državi u nedostupnim Crnim Gorama? Rekonstrukcija kraljevskog života Crne Gore na osnovu fotografija i dokumenata iz evropskih arhiva.',
+
     aboutP1:     'Monte Books — nezavisna izdavačka kuća, osnovana iz ljubavi prema književnosti i uvjerenja da dobra knjiga mijenja život. Radimo s autorima i tekstovima koji su i nama važni.',
     aboutP2:     'Ovaj tekst će zamijeniti osnivač izdavačke kuće. Ovdje će se pojaviti prava priča — o tome odakle smo, zašto postojimo i čemu težimo.',
   },
@@ -83,6 +91,10 @@ const i18n = {
     book4Title:  'Life Among Cats',
     book4Author: 'Alexander Nikishin',
     book4Desc:   'We think cats live among us. Cats think otherwise. A story of coexistence against all odds — how people and cats get along across different countries, and the scores cats have yet to settle with us.',
+
+    promoLabel:  'Illustrated album',
+    promoTitle:  'Princesses of Montenegro. A Royal History Reconstructed',
+    promoDesc:   'King Nikola Petrović of Montenegro had nine daughters. How to find them princes when the princesses themselves live in a tiny state deep in the inaccessible Black Mountains? A reconstruction of Montenegro\'s royal life drawn from photographs and documents in European archives.',
 
     aboutP1:     'Monte Books is an independent publishing house founded out of love for literature and the belief that a good book changes lives. We work with authors and texts that matter to us personally.',
     aboutP2:     'This text will be replaced by the founder of the publishing house. The real story will appear here — where we came from, why we exist, and what we strive for.',

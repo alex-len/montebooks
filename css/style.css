@@ -234,6 +234,54 @@ ul {
   line-height: 1.55;
 }
 
+/* ---------- Promo banner ---------- */
+
+.promo-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
+}
+
+.promo-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.promo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.promo-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.promo-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.promo-desc {
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 680px) {
+  .promo-banner {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- About ---------- */
 
 .about-content {
