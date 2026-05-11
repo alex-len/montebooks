@@ -14,9 +14,9 @@ const i18n = {
     navAbout:    'О нас',
     navContacts: 'Контактная информация',
 
-    book1Title:  'Название книги',
-    book1Author: 'Имя Автора',
-    book1Desc:   'Короткое описание книги. Несколько предложений о чём она и почему стоит её прочитать.',
+    book1Title:  'Я был зятем русского миллионера Шустова',
+    book1Author: 'Владимир Любимов',
+    book1Desc:   'Судьба оптимиста на фоне трагедий ХХ века. Первый спортсмен царской России, участник Первой мировой, узник сталинских лагерей — за женитьбу на дочери коньячного магната Шустова. В лагере составил свой словарь русского языка.',
 
     book2Title:  'Выжить!',
     book2Author: 'Владимир Смирнов, Александр Никишин',
@@ -41,9 +41,9 @@ const i18n = {
     navAbout:    'O nama',
     navContacts: 'Kontakt informacije',
 
-    book1Title:  'Naziv knjige',
-    book1Author: 'Ime autora',
-    book1Desc:   'Kratki opis knjige. Nekoliko rečenica o čemu se radi i zašto vrijedi pročitati.',
+    book1Title:  'Bio sam zet ruskog milionera Šustova',
+    book1Author: 'Vladimir Ljubimov',
+    book1Desc:   'Sudbina optimiste u sjenci tragedija XX vijeka. Prvak carske Rusije u sportu, učesnik Prvog svjetskog rata, zatočenik Staljinovih logora — zbog ženidbe kćerkom konjak-magnata Šustova. U logoru je sastavio sopstveni rječnik ruskog jezika.',
 
     book2Title:  'Preživjeti!',
     book2Author: 'Vladimir Smirnov, Aleksandar Nikišin',
@@ -68,9 +68,9 @@ const i18n = {
     navAbout:    'About us',
     navContacts: 'Contact information',
 
-    book1Title:  'Book title',
-    book1Author: 'Author Name',
-    book1Desc:   'A short description of the book. A few sentences about what it is and why it is worth reading.',
+    book1Title:  'I Was the Son-in-Law of Russian Millionaire Shustov',
+    book1Author: 'Vladimir Lyubimov',
+    book1Desc:   'The story of an optimist against the backdrop of 20th-century tragedy. Russia\'s first sports champion, a WWI veteran, a Stalinist camp prisoner — condemned for marrying the daughter of cognac magnate Shustov. In the camp, he compiled his own Russian dictionary.',
 
     book2Title:  'Survive!',
     book2Author: 'Vladimir Smirnov, Alexander Nikishin',
