@@ -26,9 +26,9 @@ const i18n = {
     book3Author: 'Александр Никишин',
     book3Desc:   'Историк водки проводит дегустацию напитков и закусок из произведений Булгакова. Почему кот Бегемот предлагал спирт, а не водку? Что пил Понтий Пилат и чем угощал Воланд? Литература и застолье глазами знатока.',
 
-    book4Title:  'Название книги',
-    book4Author: 'Имя Автора',
-    book4Desc:   'Короткое описание книги. Несколько предложений о чём она и почему стоит её прочитать.',
+    book4Title:  'Жизнь среди котов',
+    book4Author: 'Александр Никишин',
+    book4Desc:   'Мы думаем, что коты живут среди нас. Коты считают иначе. Опыт совместного выживания — о том, как люди и кошки уживаются в разных странах, и о больших счётах, которые коты нам предъявляют.',
 
     aboutP1:     'Monte Books — независимое издательство, основанное с любовью к литературе и убеждением, что хорошая книга меняет жизнь. Мы работаем с авторами и текстами, которые важны нам самим.',
     aboutP2:     'Этот текст будет заменён основателем издательства. Здесь появится настоящая история — о том, откуда мы, зачем мы и к чему стремимся.',
@@ -53,9 +53,9 @@ const i18n = {
     book3Author: 'Aleksandar Nikišin',
     book3Desc:   'Istoričar votke vodi degustaciju pića i zalogaja iz djela Bulgakova. Zašto je mačak Begemot nudio špiritus, a ne votku? Šta je pio Pontije Pilat i čime je častio Voland? Književnost i trpeza kroz oči poznavaoca.',
 
-    book4Title:  'Naziv knjige',
-    book4Author: 'Ime autora',
-    book4Desc:   'Kratki opis knjige. Nekoliko rečenica o čemu se radi i zašto vrijedi pročitati.',
+    book4Title:  'Život među mačkama',
+    book4Author: 'Aleksandar Nikišin',
+    book4Desc:   'Mislimo da mačke žive među nama. Mačke misle drugačije. Iskustvo zajedničkog preživljavanja — o tome kako se ljudi i mačke snalaze u različitim zemljama i o velikim računima koje nam mačke ispostavljaju.',
 
     aboutP1:     'Monte Books — nezavisna izdavačka kuća, osnovana iz ljubavi prema književnosti i uvjerenja da dobra knjiga mijenja život. Radimo s autorima i tekstovima koji su i nama važni.',
     aboutP2:     'Ovaj tekst će zamijeniti osnivač izdavačke kuće. Ovdje će se pojaviti prava priča — o tome odakle smo, zašto postojimo i čemu težimo.',
@@ -80,9 +80,9 @@ const i18n = {
     book3Author: 'Alexander Nikishin',
     book3Desc:   'A vodka historian leads a tasting of drinks and snacks from Bulgakov\'s works. Why did the cat Behemoth offer spirits instead of vodka? What did Pontius Pilate drink, and how did Woland entertain his guests? Literature and the table through a connoisseur\'s eye.',
 
-    book4Title:  'Book title',
-    book4Author: 'Author Name',
-    book4Desc:   'A short description of the book. A few sentences about what it is and why it is worth reading.',
+    book4Title:  'Life Among Cats',
+    book4Author: 'Alexander Nikishin',
+    book4Desc:   'We think cats live among us. Cats think otherwise. A story of coexistence against all odds — how people and cats get along across different countries, and the scores cats have yet to settle with us.',
 
     aboutP1:     'Monte Books is an independent publishing house founded out of love for literature and the belief that a good book changes lives. We work with authors and texts that matter to us personally.',
     aboutP2:     'This text will be replaced by the founder of the publishing house. The real story will appear here — where we came from, why we exist, and what we strive for.',
