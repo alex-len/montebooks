@@ -152,6 +152,38 @@ function detectLang() {
 
 applyLang(detectLang());
 
+// ---------- Lightbox ----------
+
+const lightbox      = document.getElementById('lightbox');
+const lightboxImg   = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+function openLightbox(src, alt) {
+  lightboxImg.src = src;
+  lightboxImg.alt = alt;
+  lightbox.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('is-open');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.zoomable').forEach(img => {
+  img.addEventListener('click', () => openLightbox(img.src, img.alt));
+});
+
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+});
+
 // ---------- Footer year ----------
 
 const yearEl = document.getElementById('year');

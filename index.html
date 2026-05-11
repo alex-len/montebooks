@@ -153,7 +153,7 @@
                 <div class="container">
                     <div class="promo-banner">
                         <div class="promo-image">
-                            <img src="images/promo-princess.png" alt="Принцессы Черногории" />
+                            <img src="images/promo-princess.png" alt="Принцессы Черногории" class="zoomable" />
                         </div>
                         <div class="promo-text">
                             <p class="promo-label" data-i18n="promoLabel">Иллюстрированный альбом</p>
@@ -272,6 +272,12 @@
             </div>
         </footer>
 
-        <script src="js/main.js"></script>
+        <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">&#x2715;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+  </div>
+
+  <script src="js/main.js"></script>
     </body>
 </html>
