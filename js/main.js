@@ -22,9 +22,9 @@ const i18n = {
     book2Author: 'Владимир Смирнов, Александр Никишин',
     book2Desc:   'Воспоминания самого известного в мире русского эмигранта — человека, который бежал от расстрела, потерял всё и создал водочный бренд Smirnoff. О том, как выжить, когда кажется, что выхода нет.',
 
-    book3Title:  'Название книги',
-    book3Author: 'Имя Автора',
-    book3Desc:   'Короткое описание книги. Несколько предложений о чём она и почему стоит её прочитать.',
+    book3Title:  'Закусить не желаете?',
+    book3Author: 'Александр Никишин',
+    book3Desc:   'Историк водки проводит дегустацию напитков и закусок из произведений Булгакова. Почему кот Бегемот предлагал спирт, а не водку? Что пил Понтий Пилат и чем угощал Воланд? Литература и застолье глазами знатока.',
 
     book4Title:  'Название книги',
     book4Author: 'Имя Автора',
@@ -49,9 +49,9 @@ const i18n = {
     book2Author: 'Vladimir Smirnov, Aleksandar Nikišin',
     book2Desc:   'Sjećanja najpoznatijeg ruskog emigranta na svijetu — čovjeka koji je pobjegao od smaknuća, izgubio sve i stvorio votku Smirnoff. O tome kako preživjeti kad se čini da nema izlaza.',
 
-    book3Title:  'Naziv knjige',
-    book3Author: 'Ime autora',
-    book3Desc:   'Kratki opis knjige. Nekoliko rečenica o čemu se radi i zašto vrijedi pročitati.',
+    book3Title:  'Zalogajite li?',
+    book3Author: 'Aleksandar Nikišin',
+    book3Desc:   'Istoričar votke vodi degustaciju pića i zalogaja iz djela Bulgakova. Zašto je mačak Begemot nudio špiritus, a ne votku? Šta je pio Pontije Pilat i čime je častio Voland? Književnost i trpeza kroz oči poznavaoca.',
 
     book4Title:  'Naziv knjige',
     book4Author: 'Ime autora',
@@ -76,9 +76,9 @@ const i18n = {
     book2Author: 'Vladimir Smirnov, Alexander Nikishin',
     book2Desc:   'The memoirs of the world\'s most famous Russian émigré — a man who fled execution, lost everything, and created the Smirnoff vodka brand. A story about surviving when there seems to be no way out.',
 
-    book3Title:  'Book title',
-    book3Author: 'Author Name',
-    book3Desc:   'A short description of the book. A few sentences about what it is and why it is worth reading.',
+    book3Title:  'Care for a snack?',
+    book3Author: 'Alexander Nikishin',
+    book3Desc:   'A vodka historian leads a tasting of drinks and snacks from Bulgakov\'s works. Why did the cat Behemoth offer spirits instead of vodka? What did Pontius Pilate drink, and how did Woland entertain his guests? Literature and the table through a connoisseur\'s eye.',
 
     book4Title:  'Book title',
     book4Author: 'Author Name',
