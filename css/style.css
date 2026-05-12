@@ -262,21 +262,58 @@ ul {
 .book3d-scene {
   perspective: 2400px;
   position: relative;
-  /* Закрытая книга: ширина одной страницы */
-  width: min(44vh, 360px, 46vw);
-  height: min(55vh, 450px, 58vw);
+  /* Сцена = всегда полный разворот (два столбца) */
+  width: min(88vh, 720px, 94vw);
+  height: min(44vh, 360px, 47vw);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12);
 }
 
-/* Все слои накладываются друг на друга */
-.book3d-cover,
-.book3d-page,
-.book3d-spread {
+/* --- Два столбца --- */
+.book3d-col {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.book3d-col--left  { left: 0; border-right: 1px solid rgba(0,0,0,0.08); }
+.book3d-col--right { right: 0; }
+
+/* Левый столбец изначально скрыт */
+.book3d-col--left {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.book3d-col--left.is-visible { opacity: 1; }
+
+/* Слои внутри левого столбца */
+.book3d-left-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.book3d-left-layer.is-active { opacity: 1; }
+.book3d-left-inside { background: #ede8e0; }
+.book3d-left-layer img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
+
+/* Слои правого столбца */
+.book3d-right-layer {
   position: absolute;
   inset: 0;
 }
+.book3d-right-layer img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+}
 
-/* --- Обложка --- */
+/* --- Обложка (в правом столбце) --- */
 .book3d-cover {
+  position: absolute;
+  inset: 0;
   transform-style: preserve-3d;
   transform-origin: left center;
   transform: rotateY(0deg);
@@ -293,20 +330,19 @@ ul {
 }
 
 .book3d-cover-front img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  box-shadow: 4px 6px 24px rgba(0,0,0,0.18);
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
 }
 
 .book3d-cover-back {
   transform: rotateY(180deg);
-  background: #e8e2d8;
+  background: #ede8e0;
 }
 
-/* --- Страница (разворот 1 → 2) --- */
+/* --- Страница разворота (в правом столбце) --- */
 .book3d-page {
+  position: absolute;
+  inset: 0;
   transform-style: preserve-3d;
   transform-origin: left center;
   transform: rotateY(0deg);
@@ -324,50 +360,11 @@ ul {
 
 .book3d-page-front img,
 .book3d-page-back img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
 }
 
-.book3d-page-back {
-  transform: rotateY(180deg);
-}
-
-/* --- Разворот 2 (фон) --- */
-.book3d-spread {
-  z-index: 1;
-  display: flex;
-}
-
-.book3d-spread-left,
-.book3d-spread-right {
-  flex: 1;
-  overflow: hidden;
-}
-
-.book3d-spread-left img,
-.book3d-spread-right img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* --- Левая страница разворота 1 (статичная) --- */
-.book3d-spread1-left {
-  position: absolute;
-  inset: 0;
-  right: 50%; /* занимает левую половину */
-  z-index: 2;
-}
-
-.book3d-spread1-left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+.book3d-page-back { transform: rotateY(180deg); }
 
 /* --- Подпись --- */
 .book3d-caption {
@@ -384,13 +381,6 @@ ul {
 
 .book3d-caption .promo-desc {
   font-size: 0.8125rem;
-}
-
-/* --- Разворот: сцена расширяется под горизонтальный разворот --- */
-.book3d-scene.is-open {
-  width: min(88vh, 720px, 94vw);
-  height: min(60vh, 490px, 65vw);
-  transition: width 0.6s ease, height 0.6s ease;
 }
 
 /* ---------- Promo banner (old, kept for reference) ---------- */

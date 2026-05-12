@@ -156,9 +156,12 @@ applyLang(detectLang());
   var track    = document.getElementById('book3d');
   var cover    = document.getElementById('book3dCover');
   var page     = document.getElementById('spread1wrap');
-  var scene    = document.getElementById('book3dScene');
+  var bookLeft = document.getElementById('bookLeft');
+  var leftInside = document.getElementById('leftInside');
+  var left1    = document.getElementById('left1');
+  var left2    = document.getElementById('left2');
 
-  if (!track || !cover || !page || !scene) return;
+  if (!track || !cover || !page || !bookLeft) return;
 
   var lastProgress = -1;
 
@@ -166,8 +169,6 @@ applyLang(detectLang());
     var rect      = track.getBoundingClientRect();
     var trackH    = track.offsetHeight;
     var viewH     = window.innerHeight;
-
-    // progress 0→1 пока секция проходит через экран
     var scrolled  = -rect.top;
     var available = trackH - viewH;
     var progress  = Math.min(1, Math.max(0, scrolled / available));
@@ -175,28 +176,36 @@ applyLang(detectLang());
     if (Math.abs(progress - lastProgress) < 0.001) return;
     lastProgress = progress;
 
-    // Фаза 1 (0–0.5): обложка открывается rotateY 0→-180°
+    // Фаза 1 (0–0.5): обложка открывается, левый столбец появляется
     var phase1 = Math.min(1, progress / 0.5);
-    var coverAngle = -180 * phase1;
-    cover.style.transform = 'rotateY(' + coverAngle + 'deg)';
+    cover.style.transform = 'rotateY(' + (-180 * phase1) + 'deg)';
 
-    // Когда обложка ушла — расширяем сцену под разворот
-    if (phase1 >= 0.5) {
-      scene.classList.add('is-open');
+    // Левый столбец: показываем когда обложка начала открываться
+    if (phase1 > 0.05) {
+      bookLeft.classList.add('is-visible');
     } else {
-      scene.classList.remove('is-open');
+      bookLeft.classList.remove('is-visible');
     }
 
-    // Фаза 2 (0.5–1): правая страница разворота 1 переворачивается
-    // transform-origin: left = переворот от левого края (корешок)
-    var phase2 = Math.max(0, (progress - 0.5) / 0.5);
-    var pageAngle = -180 * phase2;
-    page.style.transform = 'rotateY(' + pageAngle + 'deg)';
+    // Левый столбец: фаза 1 → inside cover, потом → страница 1
+    if (phase1 < 0.5) {
+      leftInside && leftInside.classList.add('is-active');
+      left1 && left1.classList.remove('is-active');
+    } else {
+      leftInside && leftInside.classList.remove('is-active');
+      left1 && left1.classList.add('is-active');
+    }
 
-    // Левая страница разворота 1 видна только в фазе 1 (пока обложка открывается)
-    var spread1Left = document.querySelector('.book3d-spread1-left');
-    if (spread1Left) {
-      spread1Left.style.opacity = phase2 > 0.5 ? '0' : '1';
+    // Фаза 2 (0.5–1): правая страница переворачивается → разворот 2
+    var phase2 = Math.max(0, (progress - 0.5) / 0.5);
+    page.style.transform = 'rotateY(' + (-180 * phase2) + 'deg)';
+
+    // Левый столбец: фаза 2 → страница 2
+    if (phase2 > 0.5) {
+      left1 && left1.classList.remove('is-active');
+      left2 && left2.classList.add('is-active');
+    } else {
+      left2 && left2.classList.remove('is-active');
     }
   }
 
