@@ -155,22 +155,41 @@
                 <div class="book3d-sticky">
                     <div class="book3d-scene" id="book3dScene">
 
-                        <!-- Spread 2 (deepest layer) -->
+                        <!--
+                          Слои снизу вверх:
+                          [4] spread2: левая + правая страница разворота 2 (самый низ)
+                          [3] page-turn: правая страница разворота 1 переворачивается,
+                                         обнажая левую страницу разворота 2
+                          [2] spread1-left: левая страница разворота 1 (статичная)
+                          [1] cover: обложка (переворачивается первой)
+                        -->
+
+                        <!-- Разворот 2: фон (всегда под всем) -->
                         <div class="book3d-spread" id="spread2">
-                            <img src="images/books/album-promo/2nd.png" alt="Разворот 2" />
+                            <div class="book3d-spread-left">
+                                <img src="images/books/album-promo/2nd_left.png" alt="" />
+                            </div>
+                            <div class="book3d-spread-right">
+                                <img src="images/books/album-promo/2nd_right.png" alt="" />
+                            </div>
                         </div>
 
-                        <!-- Spread 1 (middle layer, flips away) -->
+                        <!-- Левая страница разворота 1 (статичная, под переворачиваемой правой) -->
+                        <div class="book3d-spread1-left">
+                            <img src="images/books/album-promo/1st_left.png" alt="" />
+                        </div>
+
+                        <!-- Правая страница разворота 1 → переворачивается, открывая левую разворота 2 -->
                         <div class="book3d-page" id="spread1wrap">
                             <div class="book3d-page-front">
-                                <img src="images/books/album-promo/1st.png" alt="Разворот 1" />
+                                <img src="images/books/album-promo/1st_right.png" alt="" />
                             </div>
                             <div class="book3d-page-back">
-                                <img src="images/books/album-promo/2nd.png" alt="Разворот 2" />
+                                <img src="images/books/album-promo/2nd_left.png" alt="" />
                             </div>
                         </div>
 
-                        <!-- Cover (top layer, flips open first) -->
+                        <!-- Обложка (переворачивается первой, открывая разворот 1) -->
                         <div class="book3d-cover" id="book3dCover">
                             <div class="book3d-cover-front">
                                 <img src="images/books/album-promo/cover.png" alt="Принцессы Черногории" />

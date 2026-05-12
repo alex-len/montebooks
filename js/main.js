@@ -187,10 +187,17 @@ applyLang(detectLang());
       scene.classList.remove('is-open');
     }
 
-    // Фаза 2 (0.5–1): страница переворачивается rotateY 0→-180°
+    // Фаза 2 (0.5–1): правая страница разворота 1 переворачивается
+    // transform-origin: left = переворот от левого края (корешок)
     var phase2 = Math.max(0, (progress - 0.5) / 0.5);
     var pageAngle = -180 * phase2;
     page.style.transform = 'rotateY(' + pageAngle + 'deg)';
+
+    // Левая страница разворота 1 видна только в фазе 1 (пока обложка открывается)
+    var spread1Left = document.querySelector('.book3d-spread1-left');
+    if (spread1Left) {
+      spread1Left.style.opacity = phase2 > 0.5 ? '0' : '1';
+    }
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });

@@ -262,9 +262,9 @@ ul {
 .book3d-scene {
   perspective: 2400px;
   position: relative;
-  /* Размер под обложку (cover 1122×1402 ≈ 0.8:1) */
-  width: min(44vh, 360px);
-  height: min(55vh, 450px);
+  /* Закрытая книга: ширина одной страницы */
+  width: min(44vh, 360px, 46vw);
+  height: min(55vh, 450px, 58vw);
 }
 
 /* Все слои накладываются друг на друга */
@@ -337,9 +337,32 @@ ul {
 /* --- Разворот 2 (фон) --- */
 .book3d-spread {
   z-index: 1;
+  display: flex;
 }
 
-.book3d-spread img {
+.book3d-spread-left,
+.book3d-spread-right {
+  flex: 1;
+  overflow: hidden;
+}
+
+.book3d-spread-left img,
+.book3d-spread-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Левая страница разворота 1 (статичная) --- */
+.book3d-spread1-left {
+  position: absolute;
+  inset: 0;
+  right: 50%; /* занимает левую половину */
+  z-index: 2;
+}
+
+.book3d-spread1-left img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -365,8 +388,8 @@ ul {
 
 /* --- Разворот: сцена расширяется под горизонтальный разворот --- */
 .book3d-scene.is-open {
-  width: min(88vh, 720px);
-  height: min(60vh, 490px);
+  width: min(88vh, 720px, 94vw);
+  height: min(60vh, 490px, 65vw);
   transition: width 0.6s ease, height 0.6s ease;
 }
 
