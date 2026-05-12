@@ -262,9 +262,11 @@ ul {
 .book3d-scene {
   perspective: 2400px;
   position: relative;
-  /* Ширина = весь разворот, высота пропорциональна (1038/1515 ≈ 0.685) */
-  width: min(720px, 94vw, calc(62vh * 1515 / 1038));
-  height: min(62vh, calc(min(720px, 94vw) * 1038 / 1515));
+  overflow: hidden;
+  /* Ширина + aspect-ratio — работает на всех браузерах включая iOS Safari */
+  width: min(720px, 94vw);
+  aspect-ratio: 1515 / 1038;
+  max-height: 62vh;
   box-shadow: 0 8px 40px rgba(0,0,0,0.12);
 }
 
