@@ -27,8 +27,8 @@ const i18n = {
     book3Desc:   'Историк водки проводит дегустацию напитков и закусок из произведений Булгакова. Почему кот Бегемот предлагал спирт, а не водку? Что пил Понтий Пилат и чем угощал Воланд? Литература и застолье глазами знатока.',
 
     book4Title:  'Жизнь среди котов',
-    book4Author: 'Александр Никишин',
-    book4Desc:   'Мы думаем, что коты живут среди нас. Коты считают иначе. Опыт совместного выживания — о том, как люди и кошки уживаются в разных странах, и о больших счётах, которые коты нам предъявляют.',
+    book4Author: 'Автор несколько лет изучал жизнь кошачьего сообщества. И свои наблюдения систематизировал.',
+    book4Desc:   'Мы думаем, что коты живут среди нас. Коты считают иначе — что люди живут среди них. Опыт совместного выживания — о том, как люди и кошки уживаются в разных странах, и о больших счётах, которые коты нам предъявляют.',
 
     promoLabel:  'Иллюстрированный альбом',
     promoTitle:  'Принцессы Черногории. Реконструкция королевской истории',
@@ -58,8 +58,8 @@ const i18n = {
     book3Desc:   'Istoričar votke vodi degustaciju pića i zalogaja iz djela Bulgakova. Zašto je mačak Begemot nudio špiritus, a ne votku? Šta je pio Pontije Pilat i čime je častio Voland? Književnost i trpeza kroz oči poznavaoca.',
 
     book4Title:  'Život među mačkama',
-    book4Author: 'Aleksandar Nikišin',
-    book4Desc:   'Mislimo da mačke žive među nama. Mačke misle drugačije. Iskustvo zajedničkog preživljavanja — o tome kako se ljudi i mačke snalaze u različitim zemljama i o velikim računima koje nam mačke ispostavljaju.',
+    book4Author: 'Autor je nekoliko godina proučavao život mačje zajednice. I sistematizovao svoja zapažanja.',
+    book4Desc:   'Mislimo da mačke žive među nama. Mačke misle drugačije — da ljudi žive među njima. Iskustvo zajedničkog preživljavanja — o tome kako se ljudi i mačke snalaze u različitim zemljama i o velikim računima koje nam mačke ispostavljaju.',
 
     promoLabel:  'Ilustrovani album',
     promoTitle:  'Princeze Crne Gore. Rekonstrukcija kraljevske istorije',
@@ -89,8 +89,8 @@ const i18n = {
     book3Desc:   'A vodka historian leads a tasting of drinks and snacks from Bulgakov\'s works. Why did the cat Behemoth offer spirits instead of vodka? What did Pontius Pilate drink, and how did Woland entertain his guests? Literature and the table through a connoisseur\'s eye.',
 
     book4Title:  'Life Among Cats',
-    book4Author: 'Alexander Nikishin',
-    book4Desc:   'We think cats live among us. Cats think otherwise. A story of coexistence against all odds — how people and cats get along across different countries, and the scores cats have yet to settle with us.',
+    book4Author: 'The author spent several years studying the life of the feline community. And put his observations in order.',
+    book4Desc:   'We think cats live among us. Cats think otherwise — that people live among them. A story of coexistence against all odds — how people and cats get along across different countries, and the scores cats have yet to settle with us.',
 
     promoLabel:  'Illustrated album',
     promoTitle:  'Princesses of Montenegro. A Royal History Reconstructed',
