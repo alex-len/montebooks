@@ -142,12 +142,10 @@ function detectLang() {
     if (saved && i18n[saved]) return saved;
   } catch (_) {}
 
-  // TODO: auto-detect from browser — раскомментировать при необходимости
-  // const browser = (navigator.language || '').slice(0, 2).toLowerCase();
-  // if (browser === 'ru') return 'ru';
-  // if (browser === 'en') return 'en';
-
-  return 'ru'; // default
+  const browser = (navigator.language || '').slice(0, 2).toLowerCase();
+  if (browser === 'ru') return 'ru';
+  if (browser === 'en') return 'en';
+  return 'me'; // все остальные языки → черногорский
 }
 
 applyLang(detectLang());
