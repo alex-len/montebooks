@@ -150,6 +150,53 @@ function detectLang() {
 
 applyLang(detectLang());
 
+// ---------- Book 3D scroll animation ----------
+
+(function () {
+  var track    = document.getElementById('book3d');
+  var cover    = document.getElementById('book3dCover');
+  var page     = document.getElementById('spread1wrap');
+  var scene    = document.getElementById('book3dScene');
+
+  if (!track || !cover || !page || !scene) return;
+
+  var lastProgress = -1;
+
+  function onScroll() {
+    var rect      = track.getBoundingClientRect();
+    var trackH    = track.offsetHeight;
+    var viewH     = window.innerHeight;
+
+    // progress 0→1 пока секция проходит через экран
+    var scrolled  = -rect.top;
+    var available = trackH - viewH;
+    var progress  = Math.min(1, Math.max(0, scrolled / available));
+
+    if (Math.abs(progress - lastProgress) < 0.001) return;
+    lastProgress = progress;
+
+    // Фаза 1 (0–0.5): обложка открывается rotateY 0→-180°
+    var phase1 = Math.min(1, progress / 0.5);
+    var coverAngle = -180 * phase1;
+    cover.style.transform = 'rotateY(' + coverAngle + 'deg)';
+
+    // Когда обложка ушла — расширяем сцену под разворот
+    if (phase1 >= 0.5) {
+      scene.classList.add('is-open');
+    } else {
+      scene.classList.remove('is-open');
+    }
+
+    // Фаза 2 (0.5–1): страница переворачивается rotateY 0→-180°
+    var phase2 = Math.max(0, (progress - 0.5) / 0.5);
+    var pageAngle = -180 * phase2;
+    page.style.transform = 'rotateY(' + pageAngle + 'deg)';
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
 // ---------- Lightbox ----------
 
 const lightbox      = document.getElementById('lightbox');

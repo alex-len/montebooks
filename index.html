@@ -150,20 +150,46 @@
                 </div>
             </section>
 
-            <!-- ======= PROMO BANNER ======= -->
-            <section class="section section--promo">
-                <div class="container">
-                    <div class="promo-banner">
-                        <div class="promo-image">
-                            <img src="images/promo-princess.png" alt="Принцессы Черногории" class="zoomable" />
+            <!-- ======= BOOK 3D PROMO ======= -->
+            <section class="book3d-track" id="book3d">
+                <div class="book3d-sticky">
+                    <div class="book3d-scene" id="book3dScene">
+
+                        <!-- Spread 2 (deepest layer) -->
+                        <div class="book3d-spread" id="spread2">
+                            <img src="images/books/album-promo/2nd.png" alt="Разворот 2" />
                         </div>
-                        <div class="promo-text">
-                            <p class="promo-label" data-i18n="promoLabel">Иллюстрированный альбом</p>
-                            <h2 class="promo-title" data-i18n="promoTitle">Принцессы Черногории. Реконструкция королевской истории</h2>
-                            <p class="promo-desc" data-i18n="promoDesc">У короля Черногории Николы Петровича было девять дочек. Как найти им принцев, если сами принцессы живут в крошечном государстве в недоступных Чёрных Горах? Реконструкция королевской жизни Черногории на основе фотоматериалов и документов из архивов Европы.</p>
+
+                        <!-- Spread 1 (middle layer, flips away) -->
+                        <div class="book3d-page" id="spread1wrap">
+                            <div class="book3d-page-front">
+                                <img src="images/books/album-promo/1st.png" alt="Разворот 1" />
+                            </div>
+                            <div class="book3d-page-back">
+                                <img src="images/books/album-promo/2nd.png" alt="Разворот 2" />
+                            </div>
                         </div>
+
+                        <!-- Cover (top layer, flips open first) -->
+                        <div class="book3d-cover" id="book3dCover">
+                            <div class="book3d-cover-front">
+                                <img src="images/books/album-promo/cover.png" alt="Принцессы Черногории" />
+                            </div>
+                            <div class="book3d-cover-back"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Text below the book -->
+                    <div class="book3d-caption">
+                        <p class="promo-label" data-i18n="promoLabel">Иллюстрированный альбом</p>
+                        <h2 class="promo-title" data-i18n="promoTitle">Принцессы Черногории. Реконструкция королевской истории</h2>
+                        <p class="promo-desc" data-i18n="promoDesc">У короля Черногории Николы Петровича было девять дочек. Как найти им принцев, если сами принцессы живут в крошечном государстве в недоступных Чёрных Горах? Реконструкция королевской жизни Черногории на основе фотоматериалов и документов из архивов Европы.</p>
                     </div>
                 </div>
+
+                <!-- Scroll space for the animation -->
+                <div class="book3d-scroll-space"></div>
             </section>
 
             <!-- ======= ABOUT ======= -->

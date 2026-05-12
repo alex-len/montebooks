@@ -234,7 +234,143 @@ ul {
   line-height: 1.55;
 }
 
-/* ---------- Promo banner ---------- */
+/* ---------- Book 3D promo ---------- */
+
+.book3d-track {
+  position: relative;
+  border-top: 1px solid var(--border);
+  overflow: clip; /* обрезает 3D-overflow не ломая sticky */
+}
+
+.book3d-scroll-space {
+  height: 250vh;
+}
+
+.book3d-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding-block: 48px;
+  overflow: hidden;
+}
+
+.book3d-scene {
+  perspective: 2400px;
+  position: relative;
+  /* Размер под обложку (cover 1122×1402 ≈ 0.8:1) */
+  width: min(44vh, 360px);
+  height: min(55vh, 450px);
+}
+
+/* Все слои накладываются друг на друга */
+.book3d-cover,
+.book3d-page,
+.book3d-spread {
+  position: absolute;
+  inset: 0;
+}
+
+/* --- Обложка --- */
+.book3d-cover {
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transform: rotateY(0deg);
+  z-index: 3;
+  will-change: transform;
+}
+
+.book3d-cover-front,
+.book3d-cover-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.book3d-cover-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 4px 6px 24px rgba(0,0,0,0.18);
+}
+
+.book3d-cover-back {
+  transform: rotateY(180deg);
+  background: #e8e2d8;
+}
+
+/* --- Страница (разворот 1 → 2) --- */
+.book3d-page {
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transform: rotateY(0deg);
+  z-index: 2;
+  will-change: transform;
+}
+
+.book3d-page-front,
+.book3d-page-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.book3d-page-front img,
+.book3d-page-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.book3d-page-back {
+  transform: rotateY(180deg);
+}
+
+/* --- Разворот 2 (фон) --- */
+.book3d-spread {
+  z-index: 1;
+}
+
+.book3d-spread img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Подпись --- */
+.book3d-caption {
+  text-align: center;
+  max-width: min(560px, 90vw);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book3d-caption .promo-title {
+  font-size: clamp(1rem, 2vw, 1.375rem);
+}
+
+.book3d-caption .promo-desc {
+  font-size: 0.8125rem;
+}
+
+/* --- Разворот: сцена расширяется под горизонтальный разворот --- */
+.book3d-scene.is-open {
+  width: min(88vh, 720px);
+  height: min(60vh, 490px);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+/* ---------- Promo banner (old, kept for reference) ---------- */
 
 .promo-banner {
   display: grid;
