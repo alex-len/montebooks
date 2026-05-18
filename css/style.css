@@ -394,6 +394,19 @@ ul {
   align-items: center;
 }
 
+/* Горизонтальный баннер: картинка на всю ширину сверху, текст снизу */
+.promo-banner--full {
+  grid-template-columns: 1fr;
+  gap: clamp(20px, 3vw, 32px);
+}
+
+.promo-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: zoom-in;
+}
+
 .promo-image img {
   width: 100%;
   height: auto;

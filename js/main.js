@@ -34,6 +34,10 @@ const i18n = {
     promoTitle:  'Принцессы Черногории. Реконструкция королевской истории',
     promoDesc:   'У короля Черногории Николы Петровича было девять дочек. Как найти им принцев, если сами принцессы живут в крошечном государстве в недоступных Чёрных Горах? Реконструкция королевской жизни Черногории на основе фотоматериалов и документов из архивов Европы.',
 
+    promo2Label: 'Иллюстрированная энциклопедия',
+    promo2Title: 'Энциклопедия алкогольных напитков мира',
+    promo2Desc:  'Под одной обложкой — уникальный материал об истории водки, шампанского, байцзю, коньяка и виски. О легендарных брендах: Smirnoff, Столи, Абсолют, Bacardi, Hennessy, Martell, Moët & Chandon, Dom Pérignon, Veuve Clicquot и других. А также об истории пробки, бутылки, этикетки и «Сухом законе» в США и СССР.',
+
     aboutP1:     'Monte Books — независимое издательство, основанное с любовью к литературе и убеждением, что хорошая книга меняет жизнь. Мы работаем с авторами и текстами, которые важны нам самим.',
     aboutP2:     'Этот текст будет заменён основателем издательства. Здесь появится настоящая история — о том, откуда мы, зачем мы и к чему стремимся.',
   },
@@ -65,6 +69,10 @@ const i18n = {
     promoTitle:  'Princeze Crne Gore. Rekonstrukcija kraljevske istorije',
     promoDesc:   'Kralj Crne Gore Nikola Petrović imao je devet kćeri. Kako naći prinčeve za njih kad same princeze žive u maloj državi u nedostupnim Crnim Gorama? Rekonstrukcija kraljevskog života Crne Gore na osnovu fotografija i dokumenata iz evropskih arhiva.',
 
+    promo2Label: 'Ilustrovana enciklopedija',
+    promo2Title: 'Enciklopedija alkoholnih pića svijeta',
+    promo2Desc:  'Pod jednim koricama — jedinstven materijal o istoriji votke, šampanjca, bajdžija, konjaka i viskija. O legendarnim brendovima: Smirnoff, Stoli, Absolut, Bacardi, Hennessy, Martell, Moët & Chandon, Dom Pérignon, Veuve Clicquot i drugima. Kao i o istoriji čepa, boce, etikete i prohibiciji u SAD-u i SSSR-u.',
+
     aboutP1:     'Monte Books — nezavisna izdavačka kuća, osnovana iz ljubavi prema književnosti i uvjerenja da dobra knjiga mijenja život. Radimo s autorima i tekstovima koji su i nama važni.',
     aboutP2:     'Ovaj tekst će zamijeniti osnivač izdavačke kuće. Ovdje će se pojaviti prava priča — o tome odakle smo, zašto postojimo i čemu težimo.',
   },
@@ -95,6 +103,10 @@ const i18n = {
     promoLabel:  'Illustrated album',
     promoTitle:  'Princesses of Montenegro. A Royal History Reconstructed',
     promoDesc:   'King Nikola Petrović of Montenegro had nine daughters. How to find them princes when the princesses themselves live in a tiny state deep in the inaccessible Black Mountains? A reconstruction of Montenegro\'s royal life drawn from photographs and documents in European archives.',
+
+    promo2Label: 'Illustrated encyclopedia',
+    promo2Title: 'Encyclopedia of the World\'s Alcoholic Beverages',
+    promo2Desc:  'One volume covering the history of vodka, champagne, baijiu, cognac and whisky. Legendary brands: Smirnoff, Stoli, Absolut, Bacardi, Hennessy, Martell, Moët & Chandon, Dom Pérignon, Veuve Clicquot and more. Plus the history of the cork, bottle, label — and Prohibition in the US and USSR.',
 
     aboutP1:     'Monte Books is an independent publishing house founded out of love for literature and the belief that a good book changes lives. We work with authors and texts that matter to us personally.',
     aboutP2:     'This text will be replaced by the founder of the publishing house. The real story will appear here — where we came from, why we exist, and what we strive for.',
