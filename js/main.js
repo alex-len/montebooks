@@ -165,15 +165,19 @@ applyLang(detectLang());
 // ---------- Book 3D scroll animation ----------
 
 (function () {
-  var track    = document.getElementById('book3d');
-  var cover    = document.getElementById('book3dCover');
-  var page     = document.getElementById('spread1wrap');
-  var bookLeft = document.getElementById('bookLeft');
+  var track      = document.getElementById('book3d');
+  var cover      = document.getElementById('book3dCover');
+  var flip1      = document.getElementById('flip1');
+  var flip2      = document.getElementById('flip2');
+  var flip3      = document.getElementById('flip3');
+  var bookLeft   = document.getElementById('bookLeft');
   var leftInside = document.getElementById('leftInside');
-  var left1    = document.getElementById('left1');
-  var left2    = document.getElementById('left2');
+  var left1      = document.getElementById('left1');
+  var left3      = document.getElementById('left3');
+  var left5      = document.getElementById('left5');
+  var left7      = document.getElementById('left7');
 
-  if (!track || !cover || !page || !bookLeft) return;
+  if (!track || !cover || !flip1 || !flip2 || !flip3 || !bookLeft) return;
 
   // Кэшируем trackH — пересчитываем только при resize, не на каждый скролл
   var trackH    = track.offsetHeight;
@@ -198,20 +202,31 @@ applyLang(detectLang());
     if (Math.abs(progress - lastProgress) < 0.001) return;
     lastProgress = progress;
 
-    var phase1 = Math.min(1, progress / 0.5);
-    var phase2 = Math.max(0, (progress - 0.5) / 0.5);
+    // 4 фазы по 0.25 каждая:
+    // p0: обложка (0 → 0.25)
+    // p1: разворот 1→2 (0.25 → 0.5)
+    // p2: разворот 3→4 (0.5 → 0.75)
+    // p3: разворот 5→6 (0.75 → 1.0)
+    var p0 = Math.min(1, progress / 0.25);
+    var p1 = Math.min(1, Math.max(0, (progress - 0.25) / 0.25));
+    var p2 = Math.min(1, Math.max(0, (progress - 0.50) / 0.25));
+    var p3 = Math.min(1, Math.max(0, (progress - 0.75) / 0.25));
 
     // Все DOM-изменения в одном RAF-кадре — браузер батчит
-    cover.style.transform = 'rotateY(' + (-180 * phase1) + 'deg)';
-    page.style.transform  = 'rotateY(' + (-180 * phase2) + 'deg)';
+    cover.style.transform = 'rotateY(' + (-180 * p0) + 'deg)';
+    flip1.style.transform = 'rotateY(' + (-180 * p1) + 'deg)';
+    flip2.style.transform = 'rotateY(' + (-180 * p2) + 'deg)';
+    flip3.style.transform = 'rotateY(' + (-180 * p3) + 'deg)';
 
-    bookLeft.classList.toggle('is-visible', phase1 > 0.05);
+    // Левый столбец: показываем как только обложка начала открываться
+    bookLeft.classList.toggle('is-visible', p0 > 0.05);
 
-    if (leftInside) leftInside.classList.toggle('is-active', phase1 < 0.5);
-    if (left1) {
-      left1.classList.toggle('is-active', phase1 >= 0.5 && phase2 <= 0.5);
-    }
-    if (left2) left2.classList.toggle('is-active', phase2 > 0.5);
+    // Переключаем активный слой левого столбца
+    if (leftInside) leftInside.classList.toggle('is-active', p0 < 0.5);
+    if (left1)  left1.classList.toggle('is-active',  p0 >= 0.5 && p1 < 0.5);
+    if (left3)  left3.classList.toggle('is-active',  p1 >= 0.5 && p2 < 0.5);
+    if (left5)  left5.classList.toggle('is-active',  p2 >= 0.5 && p3 < 0.5);
+    if (left7)  left7.classList.toggle('is-active',  p3 >= 0.5);
   }
 
   function onScroll() {

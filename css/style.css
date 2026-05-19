@@ -243,7 +243,7 @@ ul {
 }
 
 .book3d-scroll-space {
-  height: 250vh;
+  height: 400vh;
 }
 
 .book3d-sticky {
@@ -265,7 +265,7 @@ ul {
   overflow: hidden;
   /* Ширина + aspect-ratio — работает на всех браузерах включая iOS Safari */
   width: min(720px, 94vw);
-  aspect-ratio: 1515 / 1038;
+  aspect-ratio: 2046 / 1537;
   max-height: 62vh;
   box-shadow: 0 8px 40px rgba(0,0,0,0.12);
 }
