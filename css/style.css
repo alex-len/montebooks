@@ -319,7 +319,7 @@ ul {
   transform-style: preserve-3d;
   transform-origin: left center;
   transform: rotateY(0deg);
-  z-index: 3;
+  z-index: 6;
   will-change: transform;
 }
 
