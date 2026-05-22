@@ -38,8 +38,8 @@ const i18n = {
     promo2Title: 'Энциклопедия алкогольных напитков мира',
     promo2Desc:  'Под одной обложкой — уникальный материал об истории водки, шампанского, байцзю, коньяка и виски. О легендарных брендах: Smirnoff, Столи, Абсолют, Bacardi, Hennessy, Martell, Moët & Chandon, Dom Pérignon, Veuve Clicquot и других. А также об истории пробки, бутылки, этикетки и «Сухом законе» в США и СССР.',
 
-    aboutP1:     'Monte Books — независимое издательство, основанное с любовью к литературе и убеждением, что хорошая книга меняет жизнь. Мы работаем с авторами и текстами, которые важны нам самим.',
-    aboutP2:     'Этот текст будет заменён основателем издательства. Здесь появится настоящая история — о том, откуда мы, зачем мы и к чему стремимся.',
+    aboutP1:     'Издательство Monte Books создано деятелями культуры разных стран, разделяющих идеи свободы слова, право на самовыражение в своих текстах, имеющих свой взгляд на те или иные события.',
+    aboutP2:     'Герои книг, которые мы запланировали к выпуску в ближайшие месяцы, подают пример выживания тогда, когда все вокруг опускают руки. Подобное чтение полезно в переломные времена истории и с точки зрения изучения опыта честной и бескомпромиссной жизни, оно идеально с точки зрения получения практических идей.',
   },
 
   me: {
@@ -73,8 +73,8 @@ const i18n = {
     promo2Title: 'Enciklopedija alkoholnih pića svijeta',
     promo2Desc:  'Pod jednim koricama — jedinstven materijal o istoriji votke, šampanjca, bajdžija, konjaka i viskija. O legendarnim brendovima: Smirnoff, Stoli, Absolut, Bacardi, Hennessy, Martell, Moët & Chandon, Dom Pérignon, Veuve Clicquot i drugima. Kao i o istoriji čepa, boce, etikete i prohibiciji u SAD-u i SSSR-u.',
 
-    aboutP1:     'Monte Books — nezavisna izdavačka kuća, osnovana iz ljubavi prema književnosti i uvjerenja da dobra knjiga mijenja život. Radimo s autorima i tekstovima koji su i nama važni.',
-    aboutP2:     'Ovaj tekst će zamijeniti osnivač izdavačke kuće. Ovdje će se pojaviti prava priča — o tome odakle smo, zašto postojimo i čemu težimo.',
+    aboutP1:     'Izdavačka kuća Monte Books osnovana je od strane kulturnih stvaralaca iz različitih zemalja koji dijele ideje slobode govora, pravo na samoizražavanje u svojim tekstovima i imaju vlastiti pogled na razne događaje.',
+    aboutP2:     'Junaci knjiga koje smo planirali za objavljivanje u narednim mjesecima daju primjer preživljavanja u trenucima kada svi oko njih gube nadu. Ovakvo štivo je korisno u prelomnim vremenima istorije — i sa stanovišta usvajanja iskustva poštenog i beskompromisnog života, savršeno je sa stanovišta sticanja praktičnih ideja.',
   },
 
   en: {
@@ -108,8 +108,8 @@ const i18n = {
     promo2Title: 'Encyclopedia of the World\'s Alcoholic Beverages',
     promo2Desc:  'One volume covering the history of vodka, champagne, baijiu, cognac and whisky. Legendary brands: Smirnoff, Stoli, Absolut, Bacardi, Hennessy, Martell, Moët & Chandon, Dom Pérignon, Veuve Clicquot and more. Plus the history of the cork, bottle, label — and Prohibition in the US and USSR.',
 
-    aboutP1:     'Monte Books is an independent publishing house founded out of love for literature and the belief that a good book changes lives. We work with authors and texts that matter to us personally.',
-    aboutP2:     'This text will be replaced by the founder of the publishing house. The real story will appear here — where we came from, why we exist, and what we strive for.',
+    aboutP1:     'Monte Books was founded by cultural figures from different countries who share a belief in freedom of expression, the right to speak one\'s mind in print, and an independent perspective on events.',
+    aboutP2:     'The heroes of the books we plan to publish in the coming months set an example of resilience for times when everyone around them gives up. This kind of reading is valuable in pivotal moments of history — both as a study of honest, uncompromising lives and as a source of practical ideas.',
   },
 };
 
