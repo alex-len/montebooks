@@ -30,6 +30,10 @@ const i18n = {
     book4Author: 'Автор несколько лет изучал жизнь кошачьего сообщества. И свои наблюдения систематизировал.',
     book4Desc:   'Мы думаем, что коты живут среди нас. Коты считают иначе — что люди живут среди них. Опыт совместного выживания — о том, как люди и кошки уживаются в разных странах, и о больших счётах, которые коты нам предъявляют.',
 
+    book5Title:  'В поисках Маленького принца',
+    book5Author: 'Ольга Никишина',
+    book5Desc:   'Как связан автор великой сказки «Маленький принц» лётчик и писатель Экзюпери и Черногория? В Герцег Нови выставлены личные вещи Экзюпери и его жены Консуэло, документы и редкие фотографии. История дружбы Булгакова и Экзюпери, завязавшейся в сталинской Москве.',
+
     promoLabel:  'Иллюстрированный альбом',
     promoTitle:  'Принцессы Черногории. Реконструкция королевской истории',
     promoDesc:   'У короля Черногории Николы Петровича было девять дочек. Как найти им принцев, если сами принцессы живут в крошечном государстве в недоступных Чёрных Горах? Реконструкция королевской жизни Черногории на основе фотоматериалов и документов из архивов Европы.',
@@ -65,6 +69,10 @@ const i18n = {
     book4Author: 'Autor je nekoliko godina proučavao život mačje zajednice. I sistematizovao svoja zapažanja.',
     book4Desc:   'Mislimo da mačke žive među nama. Mačke misle drugačije — da ljudi žive među njima. Iskustvo zajedničkog preživljavanja — o tome kako se ljudi i mačke snalaze u različitim zemljama i o velikim računima koje nam mačke ispostavljaju.',
 
+    book5Title:  'U potrazi za Malim princem',
+    book5Author: 'Olga Nikišina',
+    book5Desc:   'Kakva je veza između autora čuvene bajke "Mali princ", pilota i pisca Egziperija, i Crne Gore? U Herceg Novom se čuvaju lične stvari Egziperija i njegove supruge Konsuela, dokumenti i rijetke fotografije. Priča o prijateljstvu Bulgakova i Egziperija, sklopljenom u Staljinovoj Moskvi.',
+
     promoLabel:  'Ilustrovani album',
     promoTitle:  'Princeze Crne Gore. Rekonstrukcija kraljevske istorije',
     promoDesc:   'Kralj Crne Gore Nikola Petrović imao je devet kćeri. Kako naći prinčeve za njih kad same princeze žive u maloj državi u nedostupnim Crnim Gorama? Rekonstrukcija kraljevskog života Crne Gore na osnovu fotografija i dokumenata iz evropskih arhiva.',
@@ -99,6 +107,10 @@ const i18n = {
     book4Title:  'Life Among Cats',
     book4Author: 'The author spent several years studying the life of the feline community. And put his observations in order.',
     book4Desc:   'We think cats live among us. Cats think otherwise — that people live among them. A story of coexistence against all odds — how people and cats get along across different countries, and the scores cats have yet to settle with us.',
+
+    book5Title:  'In Search of the Little Prince',
+    book5Author: 'Olga Nikishina',
+    book5Desc:   'What connects Antoine de Saint-Exupéry — aviator, author of The Little Prince — with Montenegro? In Herceg Novi, a unique exhibition preserves his personal belongings, his wife Consuelo\'s effects, documents and rare photographs. The story of an unlikely friendship between Bulgakov and Saint-Exupéry, forged in Stalin\'s Moscow.',
 
     promoLabel:  'Illustrated album',
     promoTitle:  'Princesses of Montenegro. A Royal History Reconstructed',
